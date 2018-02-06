@@ -1,6 +1,7 @@
 import React from 'react';
 import Schedule from './Schedule';
 import Availability from './Availability';
+import { Switch, Route } from 'react-router-dom';
 
 function Body(){
   return (
@@ -10,8 +11,10 @@ function Body(){
           display: flex;
         }
       `}</style>
-      <Schedule />
-      <Availability />
+      <Switch>
+        <Route path='/availability' component={Availability}/>
+        <Route path='/schedule' component={Schedule}/>
+      </Switch>
     </div>
   );
 }

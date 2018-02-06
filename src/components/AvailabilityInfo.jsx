@@ -1,5 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
+AvailabilityInfo.PropTypes = {
+  month: PropTypes.string,
+  selection: PropTypes.arrayOf(PropTypes.string)
+}
 
 function AvailabilityInfo(props){
   // // // Method 1 // // //
@@ -13,6 +18,8 @@ function AvailabilityInfo(props){
       <style jsx>{`
         div {
           background: honeydew;
+          padding: 20px;
+          margin-bottom: 20px;
         }
         ul {
           padding: 0;

@@ -7,6 +7,7 @@ function App(){
     <div>
       <style jsx global>{`
         html {
+          font-family: monospace;
           box-sizing: border-box;
         }
         *, *:before, *:after {

@@ -274,19 +274,29 @@ function Availability(){
   return (
     <div>
       <style jsx>{`
+        h3 {
+          text-align: center;
+        }
         div {
           background: lavender;
-          flex-basis: 50%;
-          text-align: center;
+          width: 100%;
+        }
+        .avail {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          padding: 10px;
         }
       `}</style>
       <h3>Availability</h3>
-      {availableProduce.map((monthInfo, index) =>
-        <AvailabilityInfo month={monthInfo.month}
-          selection={monthInfo.selection}
-          key={index}
-        />
-      )}
+      <div className='avail'>
+        {availableProduce.map((monthInfo, index) =>
+          <AvailabilityInfo month={monthInfo.month}
+            selection={monthInfo.selection}
+            key={index}
+          />
+        )}
+      </div>
     </div>
   );
 }

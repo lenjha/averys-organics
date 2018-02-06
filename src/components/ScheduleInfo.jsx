@@ -1,4 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+ScheduleInfo.PropTypes = {
+  day: PropTypes.string,
+  location: PropTypes.string,
+  hours: PropTypes.string,
+  booth: PropTypes.string
+}
 
 function ScheduleInfo(props){
   return (
@@ -9,6 +17,7 @@ function ScheduleInfo(props){
             display: flex;
             flex-direction: column;
             border: 1px solid #fff;
+            padding: 0 0 20px 20px;
           }
           h4 {
             margin-bottom: 10px;

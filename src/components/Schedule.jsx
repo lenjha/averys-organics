@@ -46,7 +46,7 @@ function Schedule(){
       <style jsx>{`
         div {
           background: lightpink;
-          flex-basis: 50%;
+          width: 100%;
         }
         h3 {
           text-align: center;
