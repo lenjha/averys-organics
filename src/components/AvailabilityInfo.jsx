@@ -1,7 +1,14 @@
 import React from 'react';
 
+
 function AvailabilityInfo(props){
+  // // // Method 1 // // //
+  // const newArray = props.selection.map((produceItem, index) =>
+  //   <li key={index}>{produceItem}</li>
+  // );
+
   return (
+    // // // Method 2 // // //
     <div>
       <style jsx>{`
         div {
